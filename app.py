@@ -5,10 +5,10 @@ import joblib
 
 app = Flask(__name__)
 cors = CORS(app)
-
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/predict', methods=['POST'])
-@cross_origin(origins='*')
+@cross_origin(origins=['http://localhost:3000/question', 'https://kbs-sil-frontend.vercel.app/question'])
 def predict():
     _json = request.json
     PM10 = _json['PM10']
