@@ -18,9 +18,7 @@ def predict():
     NO2 = _json['NO2']
     classifier = joblib.load('classifier.pkl')
     prediction = classifier.predict([[PM10,SO2,CO,O3,NO2]])
-    response = jsonify({'Kategori Pencemaran': str(prediction[0])})
-    response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-    return response
+    return jsonify({'Kategori Pencemaran': str(prediction[0])})
 
 # app.run(port=5000)
 
