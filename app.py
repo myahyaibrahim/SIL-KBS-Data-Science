@@ -8,7 +8,7 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/predict', methods=['POST'])
-@cross_origin(origins=['http://localhost:3000/question', 'https://kbs-sil-frontend.vercel.app/question'])
+@cross_origin()
 def predict():
     _json = request.json
     PM10 = _json['PM10']
@@ -18,7 +18,9 @@ def predict():
     NO2 = _json['NO2']
     classifier = joblib.load('classifier.pkl')
     prediction = classifier.predict([[PM10,SO2,CO,O3,NO2]])
-    return jsonify({'Kategori Pencemaran': str(prediction[0])})
+    response = jsonify({'Kategori Pencemaran': str(prediction[0])})
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 # app.run(port=5000)
 
