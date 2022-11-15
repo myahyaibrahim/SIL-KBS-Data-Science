@@ -1,11 +1,17 @@
+import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 import joblib
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+env_config=os.getenv("APP_SETTINGS", "config.DevelopmentConfig")
+app.config.from_object(env_config)
 
 
 @app.route('/predict', methods=['POST'])
-
+@cross_origin()
 def predict():
     _json = request.json
     PM10 = _json['PM10']
