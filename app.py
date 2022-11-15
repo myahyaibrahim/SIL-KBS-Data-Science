@@ -5,13 +5,10 @@ import joblib
 
 app = Flask(__name__)
 cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
-env_config=os.getenv("APP_SETTINGS", "config.DevelopmentConfig")
-app.config.from_object(env_config)
 
 
 @app.route('/predict', methods=['POST'])
-@cross_origin()
+@cross_origin(origins='*')
 def predict():
     _json = request.json
     PM10 = _json['PM10']
