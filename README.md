@@ -1,6 +1,6 @@
 # Tugas IF4043 Sistem Informasi Lanjut - Pengembangan SI (KBS) dengan Data Science
 
-Pengembangan suatu KBS menggunakan pendekatan data science untuk memprediksi tingkat pencemaran udara di suatu daerah
+Pengembangan suatu KBS menggunakan pendekatan data science untuk memprediksi tingkat pencemaran udara di suatu daerah. Pembahasan dan analisis mengenai tugas berikut dapat diakses pada [laporan berikut](https://github.com/myahyaibrahim/SIL-KBS-Data-Science/blob/main/!Documentation/Laporan%20IF4043-13519057-13519077-13519091.pdf)
 
 # Deployment
 
@@ -31,7 +31,7 @@ Website dapat diakses di pranala [berikut](https://kbs-sil-frontend-ed4kbl429-dw
 
 # Dataset
 
-Dataset yang digunakan merupakan dataset pencemaran udara dengan feature berupa tingkat PM10, SO2, CO, O3, dan NO2. Dataset dapat diakses pada pranala [berikut](https://data.jakarta.go.id/dataset/indeks-standar-pencemaran-udara-ispu-tahun-2020/resource/0f168955-5771-43a2-9fed-9c74ac3c268e) atau dapat mengakses file [berikut](https://github.com/myahyaibrahim/SIL-KBS-Data-Science/blob/main/indeks-standar-pencemar-udara-di-spku-bulan-januari-tahun-2020.csv)
+Dataset yang digunakan merupakan dataset pencemaran udara dengan feature berupa tingkat PM10, SO2, CO, O3, dan NO2. Dataset dapat diakses pada pranala [berikut](https://data.jakarta.go.id/dataset/indeks-standar-pencemaran-udara-ispu-tahun-2020/resource/0f168955-5771-43a2-9fed-9c74ac3c268e) atau dapat mengakses [file berikut](https://github.com/myahyaibrahim/SIL-KBS-Data-Science/blob/main/indeks-standar-pencemar-udara-di-spku-bulan-januari-tahun-2020.csv)
 
 # Hasil Pengembangan Website
 
