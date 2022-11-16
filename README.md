@@ -13,5 +13,7 @@ Dataset yang digunakan merupakan dataset pencemaran udara dengan feature berupa 
 # website
 
 1. Halaman form input data feature
+   ![Halaman form input data feature](/!Documentation/SIL-1.jpeg "Form input data feature")
 
 2. Halaman kesimpulan/hasil
+   ![Halaman kesimpulan/hasil](/!Documentation/SIL-2.jpeg "Kesimpulan/Hasil")
